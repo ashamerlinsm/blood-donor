@@ -1,0 +1,28 @@
+server:
+  port: 5111
+  
+spring:
+  application:
+    name: BLOODGROUP-MS 
+    
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/rest_jpa_db
+      username: root
+      password: root
+      
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      
+DONOR-MS:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:5222,localhost:5333,localhost:5444,localhost:5555
+    ServerListRefreshInterval: 15000
+
+
+

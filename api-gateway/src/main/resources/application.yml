@@ -1,0 +1,19 @@
+#server:
+#  port: 8585
+
+#spring:
+#  application:
+#    name: API-GATEWAY
+
+ # cloud:
+#    gateway:
+ #     routes:
+ #     - id: CUSTOMERS-MS
+ #       uri: http://localhost:6000/
+ #       predicates:
+ #       - path = /customers/** 
+           
+ #     - id: CUSTOMERS-MS
+ #       uri: http://localhost:7000/
+  #      predicates:
+  #      - path = /customers/**
